@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" value="play" onclick="someone()"/>Chơi
+<script>
+    function someone(){
+        let num1=parseInt(prompt("Nhập sô đầu"));
+        let num2=parseInt(prompt("Nhập sô cuối"));
+        let num0=parseInt(prompt('Nhập một số giữa '+  num1 + ' và ' +  num2));
+        let result = Math.floor(Math.random()*(num2-num1 +1))+num1;
+        let count=1;
+        while (num0!==result){
+            if (num0< result){
+                alert('sai rồi, giảm một ít nữa');
+                count++
+                num0=parseInt(prompt("lại nào"));
+            }else if (num0>result){
+                alert('sai rồi, lớn hơn tý');
+                count++
+                num0=parseInt(prompt("lại nào"));
+            }
+        }if (num0=result){
+            alert("yeah!, win rồi")
+        }
+    }
+</script>
+</body>
+</html>

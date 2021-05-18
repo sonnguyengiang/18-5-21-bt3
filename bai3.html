@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="hienthi()">hiện thị 20 số đầu<br>của dãy fibonacci</button>
+<div id="hienthi"></div>
+<script>
+  function hienthi() {
+      let solan = 1
+      let a = 0;
+      let b = 1;
+      let c;
+      console.log(a);
+      console.log(b);
+      document.getElementById("hienthi").innerHTML += a + '<br>';
+      document.getElementById("hienthi").innerHTML += b + '<br>';
+      for (; solan <= 20; solan++) {
+          c = a + b;
+          console.log(c)
+          a = b;
+          b = c;
+          document.getElementById("hienthi").innerHTML += c + '<br>';
+      }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="dosomeone()"> tổng 30 số tự nhiên đầu tiên chia hêt cho 7 là</button>
+<div><h1 id="show"></h1></div>
+<script>
+  function dosomeone() {
+    let solan = 0;
+    let so = 0;
+    let b = 0;
+    let a;
+    for (;solan <= 30; solan++) {
+      so++;
+      if (so % 7 != 0) {
+        continue;
+      }else {
+        a = so;
+      }
+      b = b + a;
+    }
+    document.getElementById("show").innerHTML = b;
+  }
+</script>
+</body>
+</html>

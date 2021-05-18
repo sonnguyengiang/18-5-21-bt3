@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="hienthi()">số đầu của dãy fibonacci chia hết cho 5</button>
+<div id="hienthi"></div>
+<script>
+  function hienthi() {
+    let solan = 1
+    let a = 0;
+    let b = 1;
+    let c;
+
+    for (; solan <= 20; solan++) {
+      c = a + b;
+      a = b;
+      b = c;
+      if  (c % 5 == 0) {
+        alert("là: " + c );
+        break;
+      }
+    }
+  }
+</script>
+</body>
+</html>
